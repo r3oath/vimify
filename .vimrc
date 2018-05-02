@@ -1,0 +1,46 @@
+execute pathogen#infect()
+
+set encoding=UTF-8
+set termguicolors
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set t_Co=256
+
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+
+let g:WebDevIconsNerdTreeAfterGlyphPadding=' '
+let g:webdevicons_conceal_nerdtree_brackets=1
+let NERDTreeShowHidden=1
+
+syntax enable
+set background=dark
+colorscheme gruvbox
+
+set mouse=a
+set guifont=FuraCode\ Nerd\ Font:h14
+set linespace=6
+set updatetime=100
+
+let g:airline_powerline_fonts=1
+let g:airline_theme='gruvbox'
+let g:airline#extensions#ale#enabled=1
+
+let g:flow#showquickfix=0
+
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
+let g:ale_fix_on_save = 1
+
+let g:ale_sign_error = '=>'
+let g:ale_sign_warning = '->'
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+map <C-n> :NERDTreeToggle<CR>
