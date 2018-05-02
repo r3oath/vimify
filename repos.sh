@@ -18,3 +18,4 @@ git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
 git clone https://github.com/jdkanani/vim-material-theme ~/.vim/bundle/vim-material-theme
 git clone https://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 git clone https://github.com/styled-components/vim-styled-components ~/.vim/bundle/vim-styled-components
+git clone https://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
