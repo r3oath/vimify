@@ -3,6 +3,7 @@ git clone https://github.com/mattn/emmet-vim.git ~/.vim/bundle/emmet-vim
 git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
 git clone https://github.com/Xuyuanp/nerdtree-git-plugin.git ~/.vim/bundle/nerdtree-git-plugin
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+git clone https://github.com/tpope/vim-abolish.git ~/.vim/bundle/vim-abolish
 git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
 git clone https://github.com/vim-airline/vim-airline.git ~/.vim/bundle/vim-airline
 git clone https://github.com/jwalton512/vim-blade.git ~/.vim/bundle/vim-blade
