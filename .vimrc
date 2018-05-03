@@ -50,6 +50,14 @@ ino <left> <Nop>
 ino <right> <Nop>
 ino <up> <Nop>
 
+no <C-J> <C-W><C-J>
+no <C-K> <C-W><C-K>
+no <C-H> <C-W><C-H>
+no <C-L> <C-W><C-L>
+
+set splitbelow
+set splitright
+
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
