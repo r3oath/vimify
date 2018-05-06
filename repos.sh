@@ -20,3 +20,5 @@ git clone https://github.com/jdkanani/vim-material-theme ~/.vim/bundle/vim-mater
 git clone https://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 git clone https://github.com/styled-components/vim-styled-components ~/.vim/bundle/vim-styled-components
 git clone https://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
+git clone https://github.com/fvictorio/vim-textobj-backticks.git ~/.vim/bundle/vim-textobj-backticks
+git clone https://github.com/kana/vim-textobj-user.git ~/.vim/bundle/vim-textobj-user
