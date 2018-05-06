@@ -27,7 +27,7 @@ set updatetime=100
 let g:airline_powerline_fonts=1
 let g:airline_theme='gruvbox'
 let g:airline#extensions#ale#enabled=1
-
+let g:airline#extensions#hunks#enabled=0
 let g:flow#showquickfix=0
 
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
