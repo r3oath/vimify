@@ -29,6 +29,7 @@ let g:airline_theme='gruvbox'
 let g:airline#extensions#ale#enabled=1
 let g:airline#extensions#hunks#enabled=0
 let g:flow#showquickfix=0
+let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|vendor'
 
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
