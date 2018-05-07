@@ -11,9 +11,11 @@ git clone https://github.com/hail2u/vim-css3-syntax.git ~/.vim/bundle/vim-css3-s
 git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/vim-ctrlp
 git clone https://github.com/ryanoasis/vim-devicons.git ~/.vim/bundle/vim-devicons
 git clone https://github.com/dracula/vim.git ~/.vim/bundle/vim-dracula
+git clone https://github.com/easymotion/vim-easymotion.git ~/.vim/bundle/vim-easymotion
 git clone https://github.com/sgur/vim-editorconfig.git ~/.vim/bundle/vim-editorconfig
 git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
 git clone https://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
+git clone https://github.com/nathanaelkane/vim-indent-guides.git ~/.vim/bundle/vim-indent-guides
 git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
 git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
 git clone https://github.com/jdkanani/vim-material-theme ~/.vim/bundle/vim-material-theme
