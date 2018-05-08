@@ -38,8 +38,9 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \}
 let g:ale_fix_on_save = 1
-let g:ale_sign_error = '=>'
-let g:ale_sign_warning = '->'
+let g:ale_completion_enabled = 1
+let g:ale_sign_error = '😡'
+let g:ale_sign_warning = '😨'
 let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_guide_size = 1
 let g:indent_guides_default_mapping = 1
