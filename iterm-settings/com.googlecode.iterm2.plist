@@ -64,7 +64,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>921 292 880 721 0 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>254 180 796 473 0 0 1440 878 </string>
+	<string>244 88 796 473 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1440 878 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -239,6 +239,8 @@
 			<true/>
 			<key>Blur</key>
 			<false/>
+			<key>Blur Radius</key>
+			<real>12.485632138324872</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -607,8 +609,10 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>FuraCodeNerdFontComplete-Retina 15</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
 			<key>Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
@@ -738,6 +742,8 @@
 	<date>2018-05-07T22:08:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.38294771634615388</real>
 	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>TabStyle</key>

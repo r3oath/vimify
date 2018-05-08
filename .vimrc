@@ -25,7 +25,7 @@ set splitright
 colorscheme gruvbox
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-let g:WebDevIconsNerdTreeAfterGlyphPadding=' '
+let g:WebDevIconsNerdTreeAfterGlyphPadding='  '
 let g:webdevicons_conceal_nerdtree_brackets=1
 let NERDTreeShowHidden=1
 let g:airline_powerline_fonts=1
@@ -45,6 +45,7 @@ let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_guide_size = 1
 let g:indent_guides_default_mapping = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+let g:javascript_plugin_flow = 1
 
 no <down> ddp
 no <left> <Nop>
@@ -54,8 +55,8 @@ no <C-J> <C-W><C-J>
 no <C-K> <C-W><C-K>
 no <C-H> <C-W><C-H>
 no <C-L> <C-W><C-L>
-no ∆ 10j " Alt+J
-no ˚ 10k " Alt+K
+no <M-j> 10j
+no <M-k> 10k
 
 map <leader>v :e<space>~/.vimrc<CR>
 map <leader>; <ESC>A;<ESC>
@@ -77,3 +78,4 @@ imap <leader>; <ESC>A;<ESC>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+

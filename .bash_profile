@@ -56,6 +56,8 @@ PS1="\n\n=λ (\W)";
 PS1+="\$(prompt_git \" on \") -> ";
 export PS1;
 
+alias e="nvim .";
+
 if [ -f ~/.zap ]; then
     source ~/.zap
 fi
