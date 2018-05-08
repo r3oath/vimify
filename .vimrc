@@ -54,6 +54,8 @@ no <C-J> <C-W><C-J>
 no <C-K> <C-W><C-K>
 no <C-H> <C-W><C-H>
 no <C-L> <C-W><C-L>
+no ∆ 10j " Alt+J
+no ˚ 10k " Alt+K
 
 map <leader>v :e<space>~/.vimrc<CR>
 map <leader>; <ESC>A;<ESC>
