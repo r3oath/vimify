@@ -1,5 +1,6 @@
 git clone https://github.com/w0rp/ale.git ~/.vim/bundle/ale
 git clone https://github.com/mattn/emmet-vim.git ~/.vim/bundle/emmet-vim
+git clone https://github.com/othree/es.next.syntax.vim.git ~/.vim/bundle/es.next.syntax.vim
 git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
 git clone https://github.com/Xuyuanp/nerdtree-git-plugin.git ~/.vim/bundle/nerdtree-git-plugin
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
@@ -24,3 +25,4 @@ git clone https://github.com/styled-components/vim-styled-components ~/.vim/bund
 git clone https://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
 git clone https://github.com/fvictorio/vim-textobj-backticks.git ~/.vim/bundle/vim-textobj-backticks
 git clone https://github.com/kana/vim-textobj-user.git ~/.vim/bundle/vim-textobj-user
+git clone https://github.com/othree/yajs.vim.git ~/.vim/bundle/yajs.vim
