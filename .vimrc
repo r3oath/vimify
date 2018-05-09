@@ -23,6 +23,8 @@ set splitright
 set clipboard=unnamed
 set directory=~/.vim/swapfiles//
 set backupdir=~/.vim/backups//
+set relativenumber
+set number
 
 " THEME.
 colorscheme gruvbox
@@ -49,6 +51,7 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_default_mapping = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:javascript_plugin_flow = 1
+let g:ctrlp_show_hidden = 1
 
 no <down> ddp
 no <left> <Nop>
@@ -58,8 +61,8 @@ no <C-J> <C-W><C-J>
 no <C-K> <C-W><C-K>
 no <C-H> <C-W><C-H>
 no <C-L> <C-W><C-L>
-no <M-j> 10j
-no <M-k> 10k
+no <M-j> 5j
+no <M-k> 5k
 
 map <leader>v :e<space>~/.vimrc<CR>
 map <leader>; <ESC>A;<ESC>
