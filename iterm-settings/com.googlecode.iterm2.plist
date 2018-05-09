@@ -6,6 +6,8 @@
 	<false/>
 	<key>AdjustWindowForFontSizeChange</key>
 	<false/>
+	<key>AlternateMouseScroll</key>
+	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -408,7 +410,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>921 292 880 721 0 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>773 546 796 473 0 0 2560 1418 </string>
+	<string>773 533 796 473 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 2560 1418 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>

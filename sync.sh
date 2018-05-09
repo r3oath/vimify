@@ -1,4 +1,4 @@
-mkdir -p ~/.vim/autoload ~/.vim/bundle
+mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/swapfiles ~/.vim/backups
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 . repos.sh
 ln -s ~/vimify/.vimrc ~/.vimrc

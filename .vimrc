@@ -20,6 +20,9 @@ set linespace=6
 set updatetime=100
 set splitbelow
 set splitright
+set clipboard=unnamed
+set directory=~/.vim/swapfiles//
+set backupdir=~/.vim/backups//
 
 " THEME.
 colorscheme gruvbox
