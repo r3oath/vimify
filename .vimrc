@@ -53,10 +53,6 @@ let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:javascript_plugin_flow = 1
 let g:ctrlp_show_hidden = 1
 
-no <down> ddp
-no <left> <Nop>
-no <right> <Nop>
-no <up> ddkP
 no <C-J> <C-W><C-J>
 no <C-K> <C-W><C-K>
 no <C-H> <C-W><C-H>
@@ -64,13 +60,12 @@ no <C-L> <C-W><C-L>
 no <M-j> 5j
 no <M-k> 5k
 
+map <M-Down> ddp
+map <M-Up> ddkP
+map <M-Left> V<
+map <M-Right> V>
 map <leader>v :e<space>~/.vimrc<CR>
 map <leader>; <ESC>A;<ESC>
-
-ino <down> <Nop>
-ino <left> <Nop>
-ino <right> <Nop>
-ino <up> <Nop>
 
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 imap <leader>' ''<ESC>i
