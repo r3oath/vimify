@@ -59,11 +59,12 @@ no <C-H> <C-W><C-H>
 no <C-L> <C-W><C-L>
 no <M-j> 5j
 no <M-k> 5k
+no <M-d> ddp
+no <M-u> ddkP
+no <M-f> >gv
+no <M-b> <gv
+no <C-t> <ESC>:CtrlPBuffer<CR>
 
-map <M-Down> ddp
-map <M-Up> ddkP
-map <M-Left> V<
-map <M-Right> V>
 map <leader>v :e<space>~/.vimrc<CR>
 map <leader>; <ESC>A;<ESC>
 

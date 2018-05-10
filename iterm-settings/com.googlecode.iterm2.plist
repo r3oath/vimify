@@ -370,6 +370,8 @@
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>LeftCommand</key>
+	<integer>1</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
@@ -410,7 +412,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>224 126 880 587 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>282 372 796 473 0 0 1440 878 </string>
+	<string>282 294 796 473 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 349 730 529 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -828,7 +830,7 @@
 					<key>Text</key>
 					<string>0x7f</string>
 				</dict>
-				<key>0x6b-0x100000</key>
+				<key>0x4b-0x60000</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
@@ -859,9 +861,9 @@
 				<key>0xf700-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x41</string>
+					<string>u</string>
 				</dict>
 				<key>0xf701-0x220000</key>
 				<dict>
@@ -887,9 +889,9 @@
 				<key>0xf701-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x42</string>
+					<string>d</string>
 				</dict>
 				<key>0xf702-0x220000</key>
 				<dict>
@@ -915,9 +917,9 @@
 				<key>0xf702-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x44</string>
+					<string>b</string>
 				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
@@ -943,9 +945,9 @@
 				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x43</string>
+					<string>f</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -1236,6 +1238,10 @@
 	<real>0.38294771634615388</real>
 	<key>StretchTabsToFillBar</key>
 	<false/>
+	<key>SwitchTabModifier</key>
+	<integer>9</integer>
+	<key>SwitchWindowModifier</key>
+	<integer>9</integer>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>UseBorder</key>
