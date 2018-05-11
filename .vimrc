@@ -65,19 +65,26 @@ no <M-f> >gv
 no <M-b> <gv
 no <C-t> <ESC>:CtrlPBuffer<CR>
 
-map <leader>v :e<space>~/.vimrc<CR>
-map <leader>; <ESC>A;<ESC>
-map <leader>w <ESC>ciw
-map <leader>' <ESC>ci'
-map <leader>" <ESC>ci"
-map <leader>( <ESC>ci(
-map <leader>[ <ESC>ci[
-map <leader>{ <ESC>ci{
-map <leader>t <ESC>cit
-map <C-s> <ESC>:w<CR>
-map <C-q> <ESC>:wqa<CR>
-
+imap <leader>w <ESC>ciw
+imap <leader>' <ESC>ci'
+imap <leader>" <ESC>ci"
+imap <leader>( <ESC>ci(
+imap <leader>[ <ESC>ci[
+imap <leader>{ <ESC>ci{
+imap <leader>t <ESC>cit
+imap <C-s> <ESC>:w<CR>li
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
+nmap <leader>v :e<space>~/.vimrc<CR>
+nmap <C-s> :w<CR>
+nmap <C-q> :wqa<CR>
+nmap <leader>w ciw
+nmap <leader>' ci'
+nmap <leader>" ci"
+nmap <leader>( ci(
+nmap <leader>[ ci[
+nmap <leader>{ ci{
+nmap <leader>t cit
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
