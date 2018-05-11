@@ -67,15 +67,17 @@ no <C-t> <ESC>:CtrlPBuffer<CR>
 
 map <leader>v :e<space>~/.vimrc<CR>
 map <leader>; <ESC>A;<ESC>
+map <leader>w <ESC>ciw
+map <leader>' <ESC>ci'
+map <leader>" <ESC>ci"
+map <leader>( <ESC>ci(
+map <leader>[ <ESC>ci[
+map <leader>{ <ESC>ci{
+map <leader>t <ESC>cit
+map <C-s> <ESC>:w<CR>
+map <C-q> <ESC>:wqa<CR>
 
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
-imap <leader>' ''<ESC>i
-imap <leader>" ""<ESC>i
-imap <leader>( ()<ESC>i
-imap <leader>[ []<ESC>i
-imap <leader>{ {}<ESC>i
-imap <leader>= <ESC>A
-imap <leader>; <ESC>A;<ESC>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif

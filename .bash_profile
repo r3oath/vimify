@@ -56,7 +56,13 @@ PS1="\n\n=λ (\W)";
 PS1+="\$(prompt_git \" on \") -> ";
 export PS1;
 
-alias e="nvim .";
+alias tls="tmux ls";
+alias ta="tmux a -t";
+alias tn="tmux new -s"
+alias e="nvim";
+alias gs="git status";
+alias ga="git add";
+alias gc="git commit -m";
 
 if [ -f ~/.zap ]; then
     source ~/.zap
