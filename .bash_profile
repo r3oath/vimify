@@ -63,6 +63,8 @@ alias e="nvim";
 alias gs="git status";
 alias ga="git add";
 alias gc="git commit -m";
+alias gp="git push origin `git branch | cut -c3-`";
+alias r="source ~/.bash_profile";
 
 if [ -f ~/.zap ]; then
     source ~/.zap
