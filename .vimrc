@@ -71,6 +71,7 @@ imap <leader>" <ESC>ci"
 imap <leader>( <ESC>ci(
 imap <leader>[ <ESC>ci[
 imap <leader>{ <ESC>ci{
+imap <leader>< <ESC>ci<
 imap <leader>t <ESC>cit
 imap <C-s> <ESC>:w<CR>li
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
@@ -84,7 +85,9 @@ nmap <leader>" ci"
 nmap <leader>( ci(
 nmap <leader>[ ci[
 nmap <leader>{ ci{
+nmap <leader>< ci<
 nmap <leader>t cit
+nmap <leader>h :nohl<CR>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
