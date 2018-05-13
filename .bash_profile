@@ -30,7 +30,7 @@ prompt_git() {
             # Check for untracked files.
             if [ -n "$(git ls-files --others --exclude-standard)" ]; then
                 #s+='?';
-                s+=' New ';
+                s+=' New ';
             fi;
 
             # Check for stashed files.
