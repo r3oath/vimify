@@ -81,7 +81,3 @@ fi
 
 export NVM_DIR="/Users/tstrathearn/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# added by Anaconda3 5.1.0 installer
-export PATH="/anaconda3/bin:$PATH"
-. /anaconda3/etc/profile.d/conda.sh
