@@ -17,22 +17,26 @@ prompt_git() {
 
             # Check for uncommitted changes in the index.
             if ! $(git diff --quiet --ignore-submodules --cached); then
-                s+='+';
+                #s+='+';
+                s+=' Commit ';
             fi;
 
             # Check for unstaged changes.
             if ! $(git diff-files --quiet --ignore-submodules --); then
-                s+='!';
+                #s+='!';
+                s+=' Unstaged ';
             fi;
 
             # Check for untracked files.
             if [ -n "$(git ls-files --others --exclude-standard)" ]; then
-                s+='?';
+                #s+='?';
+                s+=' New ';
             fi;
 
             # Check for stashed files.
             if $(git rev-parse --verify refs/stash &>/dev/null); then
-                s+='$';
+                #s+='$';
+                s+=' Stashed ';
             fi;
 
         fi;
@@ -44,16 +48,19 @@ prompt_git() {
             git rev-parse --short HEAD 2> /dev/null || \
             echo '(unknown)')";
 
-        [ -n "${s}" ] && s=" |> [${s}]";
+        if [ -n "${s}" ]; then 
+            s=" ~~ ${s}";
+        else
+            s=" ~~  Clean";
+        fi;
 
-        echo -e " |>  ${branchName}${s}";
+        echo -e "\033[0;33m ${branchName}${s}\n";
     else
-        return;
+        echo -e "\033[0;37mﴨ Vanilla";
     fi;
 }
 
-PS1="\n\n=λ (\W)";
-PS1+="\$(prompt_git \" on \") -> ";
+PS1="\n\n\$(prompt_git)\n\033[0;35m\w -> \033[0m";
 export PS1;
 
 alias tls="tmux ls";
@@ -66,6 +73,7 @@ alias gc="git commit -m";
 alias gp="git push origin `git branch | cut -c3-`";
 alias gd="git diff";
 alias r="source ~/.bash_profile";
+alias l="ls -laGF";
 
 if [ -f ~/.zap ]; then
     source ~/.zap
