@@ -36,7 +36,7 @@ prompt_git() {
             # Check for stashed files.
             if $(git rev-parse --verify refs/stash &>/dev/null); then
                 #s+='$';
-                s+=' Stashed ';
+                s+=' Stashed ';
             fi;
 
         fi;
@@ -49,12 +49,12 @@ prompt_git() {
             echo '(unknown)')";
 
         if [ -n "${s}" ]; then 
-            s=" ~~ ${s}";
+            s=" {. ${s}.}";
+            echo -e "\033[0;33m ${branchName}${s}\n";
         else
-            s=" ~~  Clean";
+            s=" {.  Clean .}";
+            echo -e "\033[0;37m ${branchName}${s}\n";
         fi;
-
-        echo -e "\033[0;33m ${branchName}${s}\n";
     else
         echo -e "\033[0;37mﴨ Vanilla";
     fi;

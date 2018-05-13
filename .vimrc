@@ -74,6 +74,7 @@ imap <leader>{ <ESC>ci{
 imap <leader>< <ESC>ci<
 imap <leader>t <ESC>cit
 imap <C-s> <ESC>:w<CR>li
+imap <C-q> <ESC>:wqa<CR>
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 nmap <leader>v :e<space>~/.vimrc<CR>
