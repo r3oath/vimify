@@ -25,6 +25,8 @@ set directory=~/.vim/swapfiles//
 set backupdir=~/.vim/backups//
 set relativenumber
 set number
+set endofline
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 " THEME.
 colorscheme gruvbox
@@ -89,6 +91,7 @@ nmap <leader>{ ci{
 nmap <leader>< ci<
 nmap <leader>t cit
 nmap <leader>h :nohl<CR>
+nmap <leader>i :set list!<CR>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
