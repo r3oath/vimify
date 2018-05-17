@@ -1,5 +1,6 @@
 (ln -s ~/vimify/.bash_profile ~/.bash_profile)
 (ln -s ~/vimify/.tmux.conf ~/.tmux.conf)
 (ln -s ~/vimify/.vimrc ~/.vimrc)
+(ls -s ~/vimify/.zap ~/.zap)
 (mkdir -p ~/.config/nvim; ln -s ~/vimify/init.vim ~/.config/nvim/init.vim)
 (brew install reattach-to-user-namespace)
