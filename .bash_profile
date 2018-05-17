@@ -66,12 +66,14 @@ export PS1;
 alias tls="tmux ls";
 alias ta="tmux a -t";
 alias tn="tmux new -s"
+alias tk="tmux kill-server";
 alias e="nvim";
 alias gs="git status";
 alias ga="git add";
 alias gc="git commit -m";
 alias gp='git push origin $(git branch | cut -c3-)';
 alias gd="git diff";
+alias gl="git log --oneline --graph";
 alias r="source ~/.bash_profile";
 alias l="ls -laGF";
 

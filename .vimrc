@@ -43,6 +43,7 @@ let g:flow#showquickfix=0
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|vendor'
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
+\   'php': ['php_cs_fixer'],
 \}
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
@@ -66,6 +67,7 @@ no <M-u> ddkP
 no <M-f> >gv
 no <M-b> <gv
 no <C-t> <ESC>:CtrlPBuffer<CR>
+no <C-k> :redraw!<CR>
 
 imap <leader>w <ESC>ciw
 imap <leader>' <ESC>ci'
