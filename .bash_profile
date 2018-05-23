@@ -1,6 +1,7 @@
-PATH="/usr/local/bin:$PATH"
-PATH="/usr/local/sbin:$PATH"
-PATH="~/.composer/vendor/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="~/.composer/vendor/bin:$PATH"
+export PATH="$PATH:/Applications/DevDesktop/tools"
 
 prompt_git() {
     local s='';
