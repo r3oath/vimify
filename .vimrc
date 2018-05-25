@@ -42,7 +42,7 @@ let g:airline#extensions#hunks#enabled=0
 let g:flow#showquickfix=0
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|vendor'
 let g:ale_fixers = {
-\   'javascript': ['eslint'],
+\   'javascript': ['eslint', 'prettier_eslint'],
 \   'php': ['php_cs_fixer'],
 \}
 let g:ale_fix_on_save = 1
@@ -55,6 +55,7 @@ let g:indent_guides_default_mapping = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:javascript_plugin_flow = 1
 let g:ctrlp_show_hidden = 1
+let g:vim_markdown_folding_disabled = 1
 
 no <C-J> <C-W><C-J>
 no <C-K> <C-W><C-K>
@@ -68,6 +69,7 @@ no <M-f> >gv
 no <M-b> <gv
 no <C-t> <ESC>:CtrlPBuffer<CR>
 no <C-k> :redraw!<CR>
+no <Space> <C-d>
 
 imap <leader>w <ESC>ciw
 imap <leader>' <ESC>ci'

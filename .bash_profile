@@ -69,6 +69,7 @@ alias ta="tmux a -t";
 alias tn="tmux new -s"
 alias tk="tmux kill-server";
 alias e="nvim";
+alias ee="nvim .";
 alias gs="git status";
 alias ga="git add";
 alias gc="git commit -m";
@@ -82,5 +83,5 @@ if [ -f ~/.zap ]; then
     source ~/.zap
 fi
 
-export NVM_DIR="/Users/tstrathearn/.nvm"
+export NVM_DIR="/Users/tristan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
