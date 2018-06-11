@@ -8,8 +8,8 @@ set termguicolors
 set t_Co=256
 set cursorline
 set nocompatible
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set number
 set path+=**
@@ -79,6 +79,7 @@ imap <leader>[ <ESC>ci[
 imap <leader>{ <ESC>ci{
 imap <leader>< <ESC>ci<
 imap <leader>t <ESC>cit
+imap <leader>u <ESC>u
 imap <C-s> <ESC>:w<CR>li
 imap <C-q> <ESC>:wqa<CR>
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")

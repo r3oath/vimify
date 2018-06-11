@@ -78,6 +78,8 @@ alias gd="git diff";
 alias gl="git log --oneline --graph";
 alias r="source ~/.bash_profile";
 alias l="ls -laGF";
+alias ..="cd ..";
+alias fid="find . -type f -print0 | xargs -0 grep -l";
 
 if [ -f ~/.zap ]; then
     source ~/.zap
