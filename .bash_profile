@@ -2,84 +2,66 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="~/.composer/vendor/bin:$PATH"
 export PATH="$PATH:/Applications/DevDesktop/tools"
+export PATH="$PATH:/Users/tristan/Src/Flutter/Framework/bin"
+export PATH="$PATH:/Users/tristan/bin"
+export PATH="$PATH:~/Library/Python/2.7/bin"
 
 prompt_git() {
     local s='';
     local branchName='';
-
-    # Check if the current directory is in a Git repository.
     if [ $(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}") == '0' ]; then
-
-        # check if the current directory is in .git before running git checks
         if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == 'false' ]; then
-
-            # Ensure the index is up to date.
             git update-index --really-refresh -q &>/dev/null;
-
-            # Check for uncommitted changes in the index.
             if ! $(git diff --quiet --ignore-submodules --cached); then
-                #s+='+';
-                s+=' Commit ';
+                s+='+';
             fi;
-
-            # Check for unstaged changes.
             if ! $(git diff-files --quiet --ignore-submodules --); then
-                #s+='!';
-                s+=' Unstaged ';
+                s+='!';
             fi;
-
-            # Check for untracked files.
             if [ -n "$(git ls-files --others --exclude-standard)" ]; then
-                #s+='?';
-                s+=' New ';
+                s+='?';
             fi;
-
-            # Check for stashed files.
             if $(git rev-parse --verify refs/stash &>/dev/null); then
-                #s+='$';
-                s+=' Stashed ';
+                s+='$';
             fi;
-
         fi;
-
-        # Get the short symbolic ref.
-        # If HEAD isn’t a symbolic ref, get the short SHA for the latest commit
-        # Otherwise, just give up.
         branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
             git rev-parse --short HEAD 2> /dev/null || \
             echo '(unknown)')";
-
-        if [ -n "${s}" ]; then 
-            s=" {. ${s}.}";
-            echo -e "\033[0;33m ${branchName}${s}\n";
+        if [ -n "${s}" ]; then
+            s="(${s})";
+            echo -e "🌶  ${branchName} ${s}";
         else
-            s=" {.  Clean .}";
-            echo -e "\033[0;37m ${branchName}${s}\n";
+            echo -e "🌶  ${branchName}";
         fi;
     else
-        echo -e "\033[0;37mﴨ Vanilla";
+        echo -e "☁️";
     fi;
 }
 
-PS1="\n\n\$(prompt_git)\n\033[0;35m\w -> \033[0m";
+PS1="\n\n\[$(tput setaf 3)\]\$(prompt_git)\n\[$(tput setaf 7)\]\w -> \[$(tput sgr0)\]"
 export PS1;
 
-alias tls="tmux ls";
-alias ta="tmux a -t";
-alias tn="tmux new -s"
-alias tk="tmux kill-server";
-alias e="nvim";
-alias ee="nvim .";
 alias gs="git status";
 alias ga="git add";
 alias gc="git commit -m";
-alias gp='git push origin $(git branch | cut -c3-)';
+alias gpush="git push";
+alias gpull='git pull';
+alias gss='git stash save';
 alias gd="git diff";
 alias gl="git log --oneline --graph";
+alias gtrack="git log --follow -p --stat --";
+alias gco="git checkout";
+alias gm="git merge";
+alias gwipe="git checkout -- .; git clean -d -f";
+alias gsync="git pull source develop --rebase";
 alias r="source ~/.bash_profile";
 alias l="ls -laGF";
 alias ..="cd ..";
-alias fid="find . -type f -print0 | xargs -0 grep -l";
+alias search="find . -type f -print0 | xargs -0 grep -l";
+alias nr="npm run";
+alias na="npm add";
+alias nu="npm uninstall";
 
 if [ -f ~/.zap ]; then
     source ~/.zap
@@ -87,3 +69,9 @@ fi
 
 export NVM_DIR="/Users/tristan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/tristan/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/tristan/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/tristan/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/tristan/Downloads/google-cloud-sdk/completion.bash.inc'; fi

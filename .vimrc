@@ -87,6 +87,7 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 nmap <leader>v :e<space>~/.vimrc<CR>
 nmap <C-s> :w<CR>
 nmap <C-q> :wqa<CR>
+nmap <C-w> :q<CR>
 nmap <leader>w ciw
 nmap <leader>' ci'
 nmap <leader>" ci"
