@@ -5,6 +5,8 @@ export PATH="$PATH:/Applications/DevDesktop/tools"
 export PATH="$PATH:/Users/tristan/Src/Flutter/Framework/bin"
 export PATH="$PATH:/Users/tristan/bin"
 export PATH="$PATH:~/Library/Python/2.7/bin"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 prompt_git() {
     local s='';
@@ -44,10 +46,11 @@ export PS1;
 
 alias gs="git status";
 alias ga="git add";
-alias gc="git commit -m";
+alias gc="read -p 'DID YOU CHECK ESLINT??'; git commit -m";
 alias gpush="git push";
 alias gpull='git pull';
-alias gss='git stash save';
+alias gss='git add .; git stash save "wip"';
+alias gsp='git stash pop';
 alias gd="git diff";
 alias gl="git log --oneline --graph";
 alias gtrack="git log --follow -p --stat --";
@@ -75,3 +78,5 @@ if [ -f '/Users/tristan/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Us
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/tristan/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/tristan/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+. $(brew --prefix asdf)/asdf.sh
