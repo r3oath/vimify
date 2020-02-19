@@ -12,6 +12,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -436,7 +438,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>494 158 918 512 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1027 0 0 1680 1027 </string>
+	<string>2537 -390 1700 1417 1680 -390 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1680 149 960 1057 1680 149 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1200,14 +1202,15 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.2</string>
+		<string>3.3.4</string>
+		<string>3.3.8</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
 		<string>3.3.7</string>
-		<string>3.3.0</string>
 		<string>3.2.9</string>
-		<string>3.3.4</string>
+		<string>3.3.0</string>
+		<string>3.3.2</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
@@ -1223,7 +1226,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>BDFBDCC7-7981-43A9-9EA3-F284267A3B84</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>57</integer>
+	<integer>68</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586753069.23202395</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2005,11 +2008,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-06T02:32:54Z</date>
+	<date>2020-02-18T03:57:43Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>4046056808</integer>
 	<key>SUUpdateRelaunchingMarker</key>
-	<false/>
+	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
 	<key>SoundForEsc</key>
@@ -2033,7 +2038,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.7</string>
+	<string>3.3.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>7</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
